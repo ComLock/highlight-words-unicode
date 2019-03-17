@@ -1,0 +1,9 @@
+/dist/
+/lib/
+/node_modules/
+.*
+!.babelrc
+!.editorconfig
+!.gitignore
+!.node-version
+!.npmignore

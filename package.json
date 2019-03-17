@@ -1,0 +1,44 @@
+{
+  "author": "Christian Westgaard <cwe@enonic.com>",
+  "ava": {
+    "require": [
+      "@babel/register"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/ComLock/highlight-words-unicode/issues"
+  },
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "ava": "^1.3.1",
+    "eslint": "^5.15.2",
+    "eslint-config-canonical": "^16.2.0",
+    "q-i": "^2.0.1"
+  },
+  "homepage": "https://github.com/ComLock/highlight-words-unicode#readme",
+  "keywords": [
+    "highlight",
+    "words",
+    "unicode"
+  ],
+  "license": "ISC",
+  "main": "dist/highlightWords.js",
+  "name": "highlight-words-unicode",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComLock/highlight-words-unicode.git"
+  },
+  "scripts": {
+    "build": "rm -fr ./dist && NODE_ENV=production babel ./src --out-dir ./dist --copy-files --source-maps",
+    "lint": "eslint ./src",
+    "test": "ava --verbose --serial"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "fold-to-ascii": "^4.0.0"
+  }
+}
